@@ -18,10 +18,17 @@ class UserSeeder extends Seeder
     {
         //
         User::insert([
-            "name" => "Mehdi elmir",
-            "slug" => "mehdi-elmir",
-            'email' => "admin@mymed2023.ma",
+            "name" => "Ayoub Elboukhari",
+            "slug" => "Ayoub Elboukhari",
+            'email' => "admin@kclmed.ma",
             'utype' => "ADM",
+            'password' => Hash::make(123456789),
+        ]);
+        User::insert([
+            "name" => "Ayoub Elboukhari",
+            "slug" => "Ayoub Elboukhari",
+            'email' => "USR@kclmed.ma",
+            'utype' => "USR",
             'password' => Hash::make(123456789),
         ]);
     }
