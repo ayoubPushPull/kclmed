@@ -27,7 +27,7 @@ class UserSeeder extends Seeder
         User::insert([
             "name" => "Ayoub user",
             "slug" => "Ayoub user",
-            'email' => "USR@kclmed.ma",
+            'email' => "user@kclmed.ma",
             'utype' => "USR",
             'password' => Hash::make(123456789),
         ]);
