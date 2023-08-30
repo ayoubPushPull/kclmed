@@ -1,12 +1,5 @@
 <?php
 
-use App\Http\Livewire\HomeComponent;
-use App\Http\Livewire\AboutComponent;
-use App\Http\Livewire\ContactComponent;
-use App\Http\Livewire\BlogComponent;
-use App\Http\Livewire\ServicesComponent;
-use App\Http\Livewire\DepartmentsComponent;
-use App\Http\Livewire\DoctorsComponent;
 
 
 use App\Http\Livewire\Admin\AdminDashboardComponent;
@@ -140,8 +133,6 @@ use App\Http\Livewire\Cabinet\Seances\SeancesComponent;
 use App\Http\Livewire\Cabinet\Seances\ShowSeancesComponent;
 
 use App\Http\Livewire\Cabinet\SettingCabinets\SettingCabinetsComponent;
-
-
 use App\Http\Livewire\RegisterCabinetComponent;
 use Illuminate\Support\Facades\Route;
 
@@ -157,18 +148,12 @@ use Illuminate\Support\Facades\Route;
 | routes are loaded by the RouteServiceProvider within a group which
 | contains the "web" middleware group. Now create something great!
 |
-*/ 
+*/
 
-//Public routes 
-Route::get('/', HomeComponent::class)->name('landing-home');
-Route::get('/about', AboutComponent::class)->name('landing-about');
-Route::get('/contact', ContactComponent::class)->name('landing-contact');
-Route::get('/blog', BlogComponent::class)->name('landing-blog');
-Route::get('/services', ServicesComponent::class)->name('landing-services');
-Route::get('/departments', DepartmentsComponent::class)->name('landing-departments');
-Route::get('/doctors', DoctorsComponent::class)->name('landing-doctors');
-
-
+//Public routes
+Route::get('/', function(){
+    return view('landing');
+})->name('landing-home');
 
 Route::get('/register-cabinet', RegisterCabinetComponent::class)->name('landing-register');
 
@@ -195,7 +180,7 @@ Route::middleware(['auth:sanctum', config('jetstream.auth_session'), 'verified',
     Route::get('/administration/cabinettypes/add', AddCabinetTypesComponent::class)->name('admin-cabinettypes-add');
     Route::get('/administration/cabinettypes/{slug}/edit', EditCabinetTypesComponent::class)->name('admin-cabinettypes-edit');
     Route::get('/administration/cabinettypes/{slug}/show', ShowCabinetTypesComponent::class)->name('admin-cabinettypes-show');
-    //// 
+    ////
     Route::get('/administration/plans', PlansComponent::class)->name('admin-plans');
     Route::get('/administration/plans/add', AddPlansComponent::class)->name('admin-plans-add');
     Route::get('/administration/plans/{slug}/edit', EditPlansComponent::class)->name('admin-plans-edit');
