@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="utf-8">
     <meta name="title" content="Meditex">
     <meta property="fb:app_id" content="312" />
     <meta property="og:type" content="Medical" />
-    <meta property="og:url" content="http://steelthemes.com/demo/Elango/meditex-final" />
+    <meta property="og:url" content="https://steelthemes.com/demo/Elango/meditex-final" />
     <meta property="og:title" content="Meditex">
-    <meta property="og:image" content="http://steelthemes.com/demo/Elango/meditex-final/assets/image/fbimg-210x210.jpg">
+    <meta property="og:image"
+        content="https://steelthemes.com/demo/Elango/meditex-final/assets/image/fbimg-210x210.jpg">
     <meta property="og:description" content="Meditex is html 5 Template">
     <meta name="full-screen" content="yes">
     <meta name="theme-color" content="#568701">
@@ -26,6 +28,7 @@
     <link rel="icon" type="image/png" href="{{ asset('landing/assets/image/fav/favicon-16x16.png') }}"
         sizes="16x16">
 </head>
+
 <body class="sbar_color_one">
     <!--Start Preloader -->
     <div class="preloader"></div>
@@ -74,7 +77,7 @@
                                     <span>CABINET MÉDICAL FACILEMENT</span>
                                 </h1>
                                 <div class="link-box">
-                                    <a href="{{route('login')}}" class="theme-btn ">CONNECTEZ-VOUS</a>
+                                    <a href="{{ route('login') }}" class="theme-btn ">CONNECTEZ-VOUS</a>
                                 </div>
                             </div>
                         </div>
@@ -162,7 +165,8 @@
                                             </div>
 
                                             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 form-group">
-                                                <button class=" theme-btn" type="submit" name="submit-form">Envoyer</button>
+                                                <button class=" theme-btn" type="submit"
+                                                    name="submit-form">Envoyer</button>
                                             </div>
                                         </div>
                                     </form>
@@ -179,8 +183,7 @@
                     <div class="row">
                         <div class="col-lg-12">
                             <div class="heading clearfix">
-                                <h1>
-                                    tout type de <span>cliniques</span></h1>
+                                <h1>types de <span>cliniques</span></h1>
                             </div>
                         </div>
                     </div>
@@ -188,64 +191,32 @@
                         <div class="row">
                             <div class="col-lg-12">
                                 <div class="department_icon_content">
+                                    <a href="#"><span class="flaticon-heart-2 dep_icon"></span></a>
+                                    <a href="#">
+                                        <h2>Cosmétologie</h2>
+                                    </a>
+
+                                </div>
+                                <div class="department_icon_content">
                                     <a href="#"><span class="flaticon-brain dep_icon"></span></a>
                                     <a href="#">
-                                        <h2>Psychiatrie</h2>
+                                        <h2>Généraliste</h2>
                                     </a>
-                                    <p>Dans ses tentatives continues pour définir, comprendre et catégoriser les troubles...</p>
                                 </div>
                                 <div class="department_icon_content">
                                     <a href="#"><span class="flaticon-eye-drops dep_icon"></span></a>
                                     <a href="#">
-                                        <h2>Ophtalmologie</h2>
+                                        <h2>Spécialiste</h2>
                                     </a>
-                                    <p >Notre mission est d'améliorer la qualité de vie grâce à l'amélioration de la vision...
-                                    </p>
+
                                 </div>
                                 <div class="department_icon_content">
-                                    <a href="#"><span class="flaticon-heart-2 dep_icon"></span></a>
+                                    <a href="#"><span class="flaticon-tooth dep_icon"></span></a>
                                     <a href="#">
-                                        <h2>Cardiologie</h2>
+                                        <h2>Dentaire</h2>
                                     </a>
-                                    <p>Nos domaines d'expertise font du département un centre national de référence en cardiologie...
-                                    </p>
                                 </div>
-                                <div class="department_icon_content">
-                                    <a href="#"><span class="flaticon-bacteria dep_icon"></span></a>
-                                    <a href="#">
-                                        <h2>Immunologie</h2>
-                                    </a>
-                                    <p>Le système immunitaire assure la défense d'un organisme contre les invasions...</p>
-                                </div>
-                                <div class="department_icon_content">
-                                    <a href="#"><span class="flaticon-blood dep_icon"></span></a>
-                                    <a href="#">
-                                        <h2>Hématologie</h2>
-                                    </a>
-                                    <p>Dans le domaine médical, l'hématologie inclut le traitement du sang...</p>
-                                </div>
-                                <div class="department_icon_content">
-                                    <a href="#"><span class="flaticon-stomach dep_icon"></span></a>
-                                    <a href="#">
-                                        <h2>Gastroentérologie</h2>
-                                    </a>
-                                    <p>Avec des experts reconnus au niveau national et international en gastroentérologie...</p>
-                                </div>
-                                <div class="department_icon_content">
-                                    <a href="#"><span class="flaticon-joint dep_icon"></span></a>
-                                    <a href="#">
-                                        <h2>Orthopédie</h2>
-                                    </a>
-                                    <p>Nous avons une équipe diversifiée de cliniciens, d'administrateurs et de chercheurs...</p>
-                                </div>
-                                <div class="department_icon_content">
-                                    <a href="#"><span class="flaticon-lung dep_icon"></span></a>
-                                    <a href="#">
-                                        <h2>Pneumologie</h2>
-                                    </a>
-                                    <p>Medicol est l'une des principales installations médicales en Amérique pour le diagnostic...
-                                    </p>
-                                </div>
+
                             </div>
                         </div>
                     </div>
@@ -262,7 +233,8 @@
                                 <div class="heading clearfix">
                                     <h1>BIENVENUE À <span>KCLMED </span></h1>
                                 </div>
-                                <h6 >Notre mission est de fournir un environnement de travail facile aux médecins pour gérer leur travail (rendez-vous, médicaments, patients, etc.)</h6>
+                                <h6>Notre mission est de fournir un environnement de travail facile aux médecins pour
+                                    gérer leur travail (rendez-vous, médicaments, patients, etc.)</h6>
 
                             </div>
                         </div>
@@ -337,51 +309,15 @@
                                 <div class="row">
                                     <div class="col-lg-12">
                                         <div class="heading">
-                                            <h1>POPULAR<span> ARTICLES</span></h1>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="articles-outer">
-                                    <div class="articles-inner">
-                                        <a href="#"><img
-                                                src="{{ asset('landing/assets/image/articles/articles-3-3.jpg') }}"
-                                                class="img-fluid" alt="articles"></a>
-                                        <div class="articles-content">
-                                            <p>Business . <a href="#"> July 10, 2018</a></p>
-                                            <h2><a href="#">Thousands of Patients Referred to Substance Use
-                                                    Treatment</a></h2>
-                                        </div>
-                                    </div>
-                                    <div class="articles-inner">
-                                        <a href="#"><img
-                                                src="{{ asset('landing/assets/image/articles/articles-3-2.jpg') }}"
-                                                class="img-fluid" alt="articles"></a>
-                                        <div class="articles-content">
-                                            <p>Lifestyle . <a href="#"> April 04, 2018</a></p>
-                                            <h2><a href="#">MedStar Health Bel Air Cancer Services Aligns
-                                                    Expertise</a></h2>
-                                        </div>
-                                    </div>
-                                    <div class="articles-inner">
-                                        <a href="#"> <img
-                                                src="{{ asset('landing/assets/image/articles/articles-3-1.jpg') }}"
-                                                class="img-fluid" alt="articles"></a>
-                                        <div class="articles-content">
-                                            <p>Experience . <a href="#"> February 20, 2018 </a></p>
-                                            <h2><a href="#">Dr. Gabriel Del Corral Joins MedStar Plastic &
-                                                    Reconstructive Surgery</a></h2>
+                                            <h1><span>FAQs</span></h1>
+                                            <h2>KCLMED?</h2>
+                                            <p>KCLMED est une plateforme où les médecins créent leur cabinet numérique
+                                                pour gérer leur travail de manière plus efficace et efficiente.</p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-lg-6 ">
-                                <div class="row">
-                                    <div class="col-lg-12">
-                                        <div class="heading">
-                                            <h1>MEDICAL <span>FAQs</span></h1>
-                                        </div>
-                                    </div>
-                                </div>
                                 <div class="accordion" id="faq-accordion">
                                     <div class="card">
                                         <div class="card-header" id="headingOne">
@@ -389,7 +325,7 @@
                                                 <button class="btn btn-link btn-block text-left" type="button"
                                                     data-toggle="collapse" data-target="#collapseOne"
                                                     aria-expanded="true" aria-controls="collapseOne">
-                                                    What causes tooth decay? <i
+                                                    Comment puis-je créer mon cabinet numérique sur KCLMED ?<i
                                                         class="flaticon-plus main n-active"></i> <i
                                                         class="flaticon-minus main active-min"></i>
                                                 </button>
@@ -398,12 +334,7 @@
                                         <div id="collapseOne" class="collapse show fade" aria-labelledby="headingOne"
                                             data-parent="#faq-accordion">
                                             <div class="card-body">
-                                                Decay is caused by bacteria that collect on teeth and feed on the
-                                                carbohydrates in our diet. The bacteria produce acid that wears away at
-                                                the enamel on our teeth. If decay is left untreated, it can cause pain,
-                                                infection and even tooth loss. Protect your teeth against decay by
-                                                brushing at least twice a day, flossing daily, visiting your dentist
-                                                regularly.
+                                                Pour créer votre cabinet numérique sur KCLMED, vous devez vous inscrire en tant que médecin sur la plateforme. Une fois inscrit, vous aurez accès à un tableau de bord où vous pourrez configurer votre cabinet, ajouter des détails tels que vos horaires, spécialités et coordonnées, et commencer à gérer vos rendez-vous et dossiers patients.
                                             </div>
                                         </div>
                                     </div>
@@ -413,7 +344,7 @@
                                                 <button class="btn btn-link collapsed btn-block text-left"
                                                     type="button" data-toggle="collapse" data-target="#collapseTwo"
                                                     aria-expanded="false" aria-controls="collapseTwo">
-                                                    What is dry mouth and what can I do about it? <i
+                                                    Est-ce que KCLMED garantit la confidentialité des données de mes patients ? <i
                                                         class="flaticon-plus main n-active "></i> <i
                                                         class="flaticon-minus main active-min"></i>
                                                 </button>
@@ -422,12 +353,7 @@
                                         <div id="collapseTwo" class="collapse fade" aria-labelledby="headingTwo"
                                             data-parent="#faq-accordion">
                                             <div class="card-body">
-                                                Decay is caused by bacteria that collect on teeth and feed on the
-                                                carbohydrates in our diet. The bacteria produce acid that wears away at
-                                                the enamel on our teeth. If decay is left untreated, it can cause pain,
-                                                infection and even tooth loss. Protect your teeth against decay by
-                                                brushing at least twice a day, flossing daily, visiting your dentist
-                                                regularly.
+                                                Oui, chez KCLMED, nous accordons une grande importance à la confidentialité et à la sécurité des données des patients. Nous utilisons des protocoles de sécurité avancés pour protéger les informations sensibles, et nous nous conformons aux réglementations en vigueur en matière de protection des données, telles que le Règlement général sur la protection des données (RGPD).
                                             </div>
                                         </div>
                                     </div>
@@ -438,7 +364,7 @@
                                                     type="button" data-toggle="collapse"
                                                     data-target="#collapseThree" aria-expanded="false"
                                                     aria-controls="collapseThree">
-                                                    How often should I change my toothbrush? <i
+                                                    Quels sont les avantages de l'utilisation de KCLMED pour la gestion de mon cabinet ? <i
                                                         class="flaticon-plus main n-active"></i> <i
                                                         class="flaticon-minus main active-min"></i>
                                                 </button>
@@ -447,12 +373,7 @@
                                         <div id="collapseThree" class="collapse fade" aria-labelledby="headingThree"
                                             data-parent="#faq-accordion">
                                             <div class="card-body">
-                                                Decay is caused by bacteria that collect on teeth and feed on the
-                                                carbohydrates in our diet. The bacteria produce acid that wears away at
-                                                the enamel on our teeth. If decay is left untreated, it can cause pain,
-                                                infection and even tooth loss. Protect your teeth against decay by
-                                                brushing at least twice a day, flossing daily, visiting your dentist
-                                                regularly.
+                                                KCLMED offre plusieurs avantages pour la gestion de votre cabinet. Vous pouvez accéder à vos dossiers patients de manière numérique, ce qui facilite l'organisation et la recherche des informations. Vous pouvez gérer vos rendez-vous en ligne, ce qui réduit les erreurs de planification et améliore l'efficacité. De plus, vous pouvez communiquer de manière sécurisée avec vos patients via la messagerie intégrée de la plateforme.
                                             </div>
                                         </div>
                                     </div>
@@ -462,7 +383,7 @@
                                                 <button class="btn btn-link collapsed btn-block text-left"
                                                     type="button" data-toggle="collapse" data-target="#collapseFour"
                                                     aria-expanded="false" aria-controls="collapseFour">
-                                                    How often should I see a dentist? <i
+                                                    Puis-je utiliser KCLMED sur différents appareils ? <i
                                                         class="flaticon-plus main n-active"></i> <i
                                                         class="flaticon-minus main active-min"></i>
                                                 </button>
@@ -471,12 +392,7 @@
                                         <div id="collapseFour" class="collapse fade" aria-labelledby="headingFour"
                                             data-parent="#faq-accordion">
                                             <div class="card-body">
-                                                Decay is caused by bacteria that collect on teeth and feed on the
-                                                carbohydrates in our diet. The bacteria produce acid that wears away at
-                                                the enamel on our teeth. If decay is left untreated, it can cause pain,
-                                                infection and even tooth loss. Protect your teeth against decay by
-                                                brushing at least twice a day, flossing daily, visiting your dentist
-                                                regularly.
+                                                Oui, vous pouvez utiliser KCLMED sur différents appareils tels que des ordinateurs, des tablettes et des smartphones. KCLMED est une plateforme basée sur le cloud, ce qui signifie que vous pouvez y accéder depuis n'importe quel appareil disposant d'une connexion Internet. Cela vous offre une flexibilité pour gérer votre cabinet où que vous soyez, à tout moment.
                                             </div>
                                         </div>
                                     </div>
@@ -512,29 +428,32 @@
                         <div class="col-lg-3 col-md-3 col-sm-6">
                             <div class="contact_through_inner">
                                 <span class="flaticon-phone-1 icon"></span>
-                                <p>Emergency Cases: <br />
-                                    (052) 611-5711</p>
+                                <p>Assistance Technique :<br />
+                                    +212661261803</p>
                             </div>
                         </div>
                         <div class="col-lg-3 col-md-3 col-sm-6">
                             <div class="contact_through_inner">
                                 <span class="flaticon-placeholder icon"></span>
-                                <p>E7088 Micaela Cliffs, <br />
-                                    Thielshire, OK 95062</p>
+                                <p>Lot.Rizana
+                                    Imm 9 Bureau N20
+                                    Av. Mohamed 6, 50050
+                                    Meknès-Maroc<br />
+                                </p>
                             </div>
                         </div>
                         <div class="col-lg-3 col-md-3 col-sm-6">
                             <div class="contact_through_inner">
                                 <span class="flaticon-envelope icon"></span>
-                                <p>Email Address<br />
-                                    contact@meditex.com</p>
+                                <p>Adresse e-mail <br />
+                                    alo.oui.call@gmail.com</p>
                             </div>
                         </div>
                         <div class="col-lg-3 col-md-3 col-sm-6">
                             <div class="contact_through_inner">
                                 <span class="flaticon-calendar icon"></span>
-                                <p>Book Online<br />
-                                    Appointment Now</p>
+                                <p>Inscrivez-vous <br />
+                                    Aujourd'hui</p>
                             </div>
                         </div>
                     </div>
@@ -547,22 +466,19 @@
                     <div class="row">
                         <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
                             <div class="footer-widget first">
-                                <h2>ABOUT US</h2>
+                                <h2>À PROPOS</h2>
                                 <div class="footer-text">
-                                    <p>As the only hospital in our growing county, things are buzzing as we expand our
-                                        facilities and services. We are an intimate, 200 licensed bed hospital and the
-                                        caregivers of neighbors we love.</p>
+                                    <p> KCLMED est une plateforme complète et pratique qui aide les médecins à optimiser la gestion de leur cabinet, à améliorer leur productivité et à offrir des soins de qualité supérieure à leurs patients.</p>
                                     <ul class="social-media">
                                         <li><a href="#" target="_blank"><i class="fa fa-facebook-f"></i></a>
                                         </li>
                                         <li><a href="#" target="_blank"><i class="fa fa-twitter"></i></a> </li>
-                                        <li><a href="#" target="_blank"><i class="fa fa-vimeo"></i></a> </li>
-                                        <li><a href="#" target="_blank"><i class="fa fa-wifi"></i></a> </li>
+                                        <li><a href="#" target="_blank"><i class="fa fa-linkedin"></i></a> </li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-2 col-md-2 col-sm-6 col-xs-12">
+                        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
                             <div class="footer-widget two">
                                 <h2>DEPARTMENTS</h2>
                                 <div class="footer-text">
@@ -579,7 +495,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-2 col-md-2 col-sm-6 col-xs-12">
+                        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
                             <div class="footer-widget two">
                                 <h2>LINKS</h2>
                                 <div class="footer-text">
@@ -593,21 +509,6 @@
                                         <li><a href="#">Timetable </a></li>
                                         <li><a href="#">FAQs</a></li>
                                     </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-                            <div class="footer-widget third">
-                                <h2>NEWSLETTER</h2>
-                                <div class="footer-text">
-                                    <p>Subscribe to our newsletter. We are not spammers.!</p>
-                                    <form>
-                                        <div class="form-group">
-                                            <input type="email" id="email"
-                                                placeholder="Enter Your Email*"><br />
-                                            <button class="theme-btn" type="submit">SUBSCRIBE</button>
-                                        </div>
-                                    </form>
                                 </div>
                             </div>
                         </div>
@@ -660,4 +561,5 @@
     <script src="{{ asset('landing/assets/js/map-script.js') }}"></script>
     <!--End Google Map APi-->
 </body>
+
 </html>
