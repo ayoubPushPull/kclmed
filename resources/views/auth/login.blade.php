@@ -60,20 +60,17 @@
                     <div class="nk-block nk-block-middle nk-auth-body  wide-xs">
                         <div class="brand-logo pb-4 text-center">
                             <a href="html/index.html" class="logo-link">
-                                <img class="logo-light logo-img logo-img-lg" src="{{ asset('dashboard/assets/images/logo.png') }}" srcset="{{ asset('dashboard/assets/images/logo.png') }}" alt="logo">
-                                <img class="logo-dark logo-img logo-img-lg  "   src="{{ asset('dashboard/assets/images/logo.png') }}" srcset="{{ asset('dashboard/assets/images/logo.png') }}" alt="logo-dark">
+                                <img class="logo-light logo-img logo-img-lg"
+                                    src="{{ asset('dashboard/assets/images/logo.png') }}"
+                                    srcset="{{ asset('dashboard/assets/images/logo.png') }}" alt="logo">
+                                <img class="logo-dark logo-img logo-img-lg  "
+                                    src="{{ asset('dashboard/assets/images/logo.png') }}"
+                                    srcset="{{ asset('dashboard/assets/images/logo.png') }}" alt="logo-dark">
                             </a>
                         </div>
                         <div class="card card-bordered">
                             <div class="card-inner card-inner-lg">
-                                <div class="nk-block-head">
-                                    <div class="nk-block-head-content">
-                                        <h4 class="nk-block-title">Sign-In</h4>
-                                        <div class="nk-block-des">
-                                            <p>Access the DashLite panel using your email and passcode.</p>
-                                        </div>
-                                    </div>
-                                </div>
+
 
                                 <x-jet-validation-errors class="mb-4" />
 
@@ -86,30 +83,38 @@
                                     @csrf
                                     <div class="form-group">
                                         <div class="form-label-group">
-                                            <label class="form-label" for="default-01">Email or Username</label>
+                                            <label class="form-label" for="default-01">E-mail</label>
                                         </div>
                                         <div class="form-control-wrap">
-                                            <input type="text" class="form-control form-control-lg" id="default-01" placeholder="Enter your email address or username" id="email" name="email"  required autofocus >
+                                            <input type="text" class="form-control form-control-lg" id="default-01"
+                                                placeholder="E-mail adress" id="email"
+                                                name="email" required autofocus>
                                         </div>
                                     </div>
                                     <div class="form-group">
                                         <div class="form-label-group">
-                                            <label class="form-label" for="password">Passcode</label>
-                                            <a class="link link-dark link-sm" href="html/pages/auths/auth-reset-v2.html">Forgot Code?</a>
+                                            <label class="form-label" for="password">Mot de passe</label>
+                                            <a class="link link-dark link-sm"
+                                                href="html/pages/auths/auth-reset-v2.html">Mot de passe oublier?</a>
                                         </div>
                                         <div class="form-control-wrap">
-                                            <a href="#" class="form-icon form-icon-right passcode-switch lg" data-target="password">
+                                            <a href="#" class="form-icon form-icon-right passcode-switch lg"
+                                                data-target="password">
                                                 <em class="passcode-icon icon-show icon ni ni-eye"></em>
                                                 <em class="passcode-icon icon-hide icon ni ni-eye-off"></em>
                                             </a>
-                                            <input type="password" class="form-control form-control-lg" id="password" placeholder="Enter your passcode" id="password" name="password" required autocomplete="current-password">
+                                            <input type="password" class="form-control form-control-lg" id="password"
+                                                placeholder="Mot de passe" id="password" name="password"
+                                                required autocomplete="current-password">
                                         </div>
                                     </div>
                                     <div class="form-group">
-                                        <button class="btn btn-lg btn-primary btn-block" style="background: #4682B4">Sign in</button>
+                                        <button class="btn btn-lg btn-primary btn-block"
+                                            style="background: #568701">Connecter--vous</button>
                                     </div>
                                 </form>
-                                <div class="form-note-s2 text-center pt-4"> New on our platform? <a class="text-dark fw-bold" href="{{ route('landing-register') }}">Create an account</a>
+                                <div class="form-note-s2 text-center pt-4"> Vous êtes nouveau ? <a
+                                        class="text-dark fw-bold" href="{{ route('landing-register') }}">Créer un compte</a>
                                 </div>
 
                             </div>
@@ -125,6 +130,3 @@
     </div>
 
 </x-guest-layout>
-
-
-

@@ -18,7 +18,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
     <!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
-    <title>KCL MED</title>
+    <title>KCLMED</title>
     <link rel="stylesheet" type="text/css" href="{{ asset('landing/assets/css/style.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('landing/assets/css/responsive.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('landing/assets/fonts/font/flaticon.css') }}">
@@ -47,16 +47,16 @@
                                 <a class="nav-link link_hd" href="#"> Accueil </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link link_hd" href="#"> Départements </a>
+                                <a class="nav-link link_hd" href="#a_heure"> Heures </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link link_hd" href="#"> Pages </a>
+                                <a class="nav-link link_hd" href="#a_type"> Types </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link link_hd" href="#"> Blog </a>
+                                <a class="nav-link link_hd" href="#faqs"> Faq </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link link_hd" href="#"> CONNECTEZ-VOUS </a>
+                                <a class="nav-link link_hd" href="{{route('login')}}"> CONNECTEZ-VOUS </a>
                             </li>
                         </ul>
                     </div>
@@ -92,7 +92,7 @@
                                 </h1>
 
                                 <div class="link-box">
-                                    <a href="#" class="theme-btn ">CONNECTEZ-VOUS</a>
+                                    <a href="{{route('login')}}" class="theme-btn ">CONNECTEZ-VOUS</a>
                                 </div>
                             </div>
                         </div>
@@ -107,7 +107,7 @@
                                 </h1>
 
                                 <div class="link-box">
-                                    <a href="#" class="theme-btn ">CONNECTEZ-VOUS</a>
+                                    <a href="{{route('login')}}" class="theme-btn ">CONNECTEZ-VOUS</a>
                                 </div>
                             </div>
                         </div>
@@ -116,7 +116,7 @@
             </section>
             <!------main-slider------>
             <!-------appointment-section----->
-            <section class="appointment_section hm-one">
+            <section class="appointment_section hm-one" id="a_heure">
                 <div class="container">
                     <div class="appointment_inner">
                         <div class="row">
@@ -178,7 +178,7 @@
             </section>
             <!-------appointment-section----->
             <!-------appointment-section----->
-            <section class="department_section hm-one">
+            <section class="department_section hm-one" id="a_type">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-12">
@@ -334,7 +334,11 @@
                                         <div id="collapseOne" class="collapse show fade" aria-labelledby="headingOne"
                                             data-parent="#faq-accordion">
                                             <div class="card-body">
-                                                Pour créer votre cabinet numérique sur KCLMED, vous devez vous inscrire en tant que médecin sur la plateforme. Une fois inscrit, vous aurez accès à un tableau de bord où vous pourrez configurer votre cabinet, ajouter des détails tels que vos horaires, spécialités et coordonnées, et commencer à gérer vos rendez-vous et dossiers patients.
+                                                Pour créer votre cabinet numérique sur KCLMED, vous devez vous inscrire
+                                                en tant que médecin sur la plateforme. Une fois inscrit, vous aurez
+                                                accès à un tableau de bord où vous pourrez configurer votre cabinet,
+                                                ajouter des détails tels que vos horaires, spécialités et coordonnées,
+                                                et commencer à gérer vos rendez-vous et dossiers patients.
                                             </div>
                                         </div>
                                     </div>
@@ -344,8 +348,8 @@
                                                 <button class="btn btn-link collapsed btn-block text-left"
                                                     type="button" data-toggle="collapse" data-target="#collapseTwo"
                                                     aria-expanded="false" aria-controls="collapseTwo">
-                                                    Est-ce que KCLMED garantit la confidentialité des données de mes patients ? <i
-                                                        class="flaticon-plus main n-active "></i> <i
+                                                    Est-ce que KCLMED garantit la confidentialité des données de mes
+                                                    patients ? <i class="flaticon-plus main n-active "></i> <i
                                                         class="flaticon-minus main active-min"></i>
                                                 </button>
                                             </h5>
@@ -353,7 +357,12 @@
                                         <div id="collapseTwo" class="collapse fade" aria-labelledby="headingTwo"
                                             data-parent="#faq-accordion">
                                             <div class="card-body">
-                                                Oui, chez KCLMED, nous accordons une grande importance à la confidentialité et à la sécurité des données des patients. Nous utilisons des protocoles de sécurité avancés pour protéger les informations sensibles, et nous nous conformons aux réglementations en vigueur en matière de protection des données, telles que le Règlement général sur la protection des données (RGPD).
+                                                Oui, chez KCLMED, nous accordons une grande importance à la
+                                                confidentialité et à la sécurité des données des patients. Nous
+                                                utilisons des protocoles de sécurité avancés pour protéger les
+                                                informations sensibles, et nous nous conformons aux réglementations en
+                                                vigueur en matière de protection des données, telles que le Règlement
+                                                général sur la protection des données (RGPD).
                                             </div>
                                         </div>
                                     </div>
@@ -364,8 +373,8 @@
                                                     type="button" data-toggle="collapse"
                                                     data-target="#collapseThree" aria-expanded="false"
                                                     aria-controls="collapseThree">
-                                                    Quels sont les avantages de l'utilisation de KCLMED pour la gestion de mon cabinet ? <i
-                                                        class="flaticon-plus main n-active"></i> <i
+                                                    Quels sont les avantages de l'utilisation de KCLMED pour la gestion
+                                                    de mon cabinet ? <i class="flaticon-plus main n-active"></i> <i
                                                         class="flaticon-minus main active-min"></i>
                                                 </button>
                                             </h5>
@@ -373,7 +382,13 @@
                                         <div id="collapseThree" class="collapse fade" aria-labelledby="headingThree"
                                             data-parent="#faq-accordion">
                                             <div class="card-body">
-                                                KCLMED offre plusieurs avantages pour la gestion de votre cabinet. Vous pouvez accéder à vos dossiers patients de manière numérique, ce qui facilite l'organisation et la recherche des informations. Vous pouvez gérer vos rendez-vous en ligne, ce qui réduit les erreurs de planification et améliore l'efficacité. De plus, vous pouvez communiquer de manière sécurisée avec vos patients via la messagerie intégrée de la plateforme.
+                                                KCLMED offre plusieurs avantages pour la gestion de votre cabinet. Vous
+                                                pouvez accéder à vos dossiers patients de manière numérique, ce qui
+                                                facilite l'organisation et la recherche des informations. Vous pouvez
+                                                gérer vos rendez-vous en ligne, ce qui réduit les erreurs de
+                                                planification et améliore l'efficacité. De plus, vous pouvez communiquer
+                                                de manière sécurisée avec vos patients via la messagerie intégrée de la
+                                                plateforme.
                                             </div>
                                         </div>
                                     </div>
@@ -392,7 +407,12 @@
                                         <div id="collapseFour" class="collapse fade" aria-labelledby="headingFour"
                                             data-parent="#faq-accordion">
                                             <div class="card-body">
-                                                Oui, vous pouvez utiliser KCLMED sur différents appareils tels que des ordinateurs, des tablettes et des smartphones. KCLMED est une plateforme basée sur le cloud, ce qui signifie que vous pouvez y accéder depuis n'importe quel appareil disposant d'une connexion Internet. Cela vous offre une flexibilité pour gérer votre cabinet où que vous soyez, à tout moment.
+                                                Oui, vous pouvez utiliser KCLMED sur différents appareils tels que des
+                                                ordinateurs, des tablettes et des smartphones. KCLMED est une plateforme
+                                                basée sur le cloud, ce qui signifie que vous pouvez y accéder depuis
+                                                n'importe quel appareil disposant d'une connexion Internet. Cela vous
+                                                offre une flexibilité pour gérer votre cabinet où que vous soyez, à tout
+                                                moment.
                                             </div>
                                         </div>
                                     </div>
@@ -468,46 +488,43 @@
                             <div class="footer-widget first">
                                 <h2>À PROPOS</h2>
                                 <div class="footer-text">
-                                    <p> KCLMED est une plateforme complète et pratique qui aide les médecins à optimiser la gestion de leur cabinet, à améliorer leur productivité et à offrir des soins de qualité supérieure à leurs patients.</p>
+                                    <p> KCLMED est une plateforme complète et pratique qui aide les médecins à optimiser
+                                        la gestion de leur cabinet, à améliorer leur productivité et à offrir des soins
+                                        de qualité supérieure à leurs patients.</p>
                                     <ul class="social-media">
-                                        <li><a href="#" target="_blank"><i class="fa fa-facebook-f"></i></a>
+                                        <li><a href="https://www.Facebook.com/kadacallingleads" target="_blank"><i class="fa fa-facebook-f"></i></a>
                                         </li>
-                                        <li><a href="#" target="_blank"><i class="fa fa-twitter"></i></a> </li>
-                                        <li><a href="#" target="_blank"><i class="fa fa-linkedin"></i></a> </li>
+                                        <li><a href="https://twitter.com/OuiAlo" target="_blank"><i class="fa fa-twitter"></i></a> </li>
+                                        <li><a href="https://www.linkedin.com/in/bouamara-adele-5a53519b/" target="_blank"><i class="fa fa-linkedin"></i></a>
+                                        </li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
                             <div class="footer-widget two">
-                                <h2>DEPARTMENTS</h2>
+                                <h2>Contactez-nous</h2>
                                 <div class="footer-text">
                                     <ul>
-                                        <li><a href="#"> Psychiatry</a></li>
-                                        <li><a href="#">Ophthalmology</a></li>
-                                        <li><a href="#">Cardiology </a></li>
-                                        <li><a href="#">Immunology </a></li>
-                                        <li><a href="#">Hematology </a></li>
-                                        <li><a href="#">Gastroenterology </a></li>
-                                        <li><a href="#">Orthopedics </a></li>
-                                        <li><a href="#">Pulmonary</a></li>
+                                        <li>Disponible</li>
+                                        <li>lundi a samedi</li>
+                                        <li>8h-18h</li>
+                                        <li>Fix : +212535463293</li>
+                                        <li>Gsm : +212661261803</li>
+                                        <li><a href="#">alo.oui.call@gmail.com </a></li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
                             <div class="footer-widget two">
-                                <h2>LINKS</h2>
+                                <h2>Localisation</h2>
                                 <div class="footer-text">
                                     <ul>
-                                        <li><a href="#"> About Us</a></li>
-                                        <li><a href="#">Appointment</a></li>
-                                        <li><a href="#">Contact Us </a></li>
-                                        <li><a href="#">Blog </a></li>
-                                        <li><a href="#">Doctors</a></li>
-                                        <li><a href="#">Gallery </a></li>
-                                        <li><a href="#">Timetable </a></li>
-                                        <li><a href="#">FAQs</a></li>
+                                        <li>Lot.Rizana</li>
+                                        <li>Imm 9 Bureau N20</li>
+                                        <li>Av. Mohamed 6, 50050</li>
+                                        <li>Meknès-Maroc</li>
                                     </ul>
                                 </div>
                             </div>

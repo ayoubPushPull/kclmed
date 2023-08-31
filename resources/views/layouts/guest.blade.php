@@ -12,6 +12,8 @@
     <link id="skin-default" rel="stylesheet" href="{{ asset('dashboard/assets/css/theme.css?ver=3.1.2') }}">
     <link href="{{ asset('dashboard/assets/css/wizard.css') }}" rel="stylesheet" id="bootstrap-css">
     <!-- Scripts -->
+    <link rel="icon" type="image/png" href="{{ asset('landing/assets/image/fav/favicon-16x16.png') }}"
+        sizes="16x16">
     <!-- Scripts -->
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
     @livewireStyles
