@@ -73,7 +73,6 @@
                                 <h1>GEREZ VOTRE<br />
                                     <span>CABINET MÉDICAL FACILEMENT</span>
                                 </h1>
-                                <div class="text">La mission audacieuse de la plateforme KCLMED est de rendre votre pratique médicale plus facile.</div>
                                 <div class="link-box">
                                     <a href="{{route('login')}}" class="theme-btn ">CONNECTEZ-VOUS</a>
                                 </div>
@@ -84,14 +83,13 @@
                         style="background-image:url({{ asset('landing/assets/image/banner/home-1-banner-2.jpg') }})">
                         <div class="container text-left">
                             <div class="content ">
-                                <h1>Advanced Medicine,<br />
-                                    <span>Trusted Care.</span>
+                                <h1>KCLMED<br />
+                                    <span>
+                                        garder tout en ordre</span>
                                 </h1>
-                                <div class="text">The bold mission of America’s MEDITEX Companies is to bring
-                                    an end to the burdens of disease, in all its forms.</div>
+
                                 <div class="link-box">
-                                    <a href="#" class="theme-btn ">DEPARTMENTS</a>
-                                    <a href="#" class="theme-btn btn-dark">get in touch</a>
+                                    <a href="#" class="theme-btn ">CONNECTEZ-VOUS</a>
                                 </div>
                             </div>
                         </div>
@@ -100,14 +98,13 @@
                         style="background-image:url({{ asset('landing/assets/image/banner/home-1-banner-3.jpg') }})">
                         <div class="container text-left">
                             <div class="content ">
-                                <h1>Enhancing Life,<br />
-                                    <span>Excelling in Care.</span>
+                                <h1>KCLMED<br />
+                                    <span>
+                                        TOUTES TYPES DE CLINIQUES</span>
                                 </h1>
-                                <div class="text">The bold mission of America’s MEDITEX Companies is to bring
-                                    an end to the burdens of disease, in all its forms.</div>
+
                                 <div class="link-box">
-                                    <a href="#" class="theme-btn ">DEPARTMENTS</a>
-                                    <a href="#" class="theme-btn btn-dark">get in touch</a>
+                                    <a href="#" class="theme-btn ">CONNECTEZ-VOUS</a>
                                 </div>
                             </div>
                         </div>
@@ -182,8 +179,8 @@
                     <div class="row">
                         <div class="col-lg-12">
                             <div class="heading clearfix">
-                                <h1>NOS <span>DÉPARTEMENTS</span></h1>
-                                <p><a href="#">VOIR TOUS LES CAS</a></p>
+                                <h1>
+                                    tout type de <span>cliniques</span></h1>
                             </div>
                         </div>
                     </div>
@@ -202,7 +199,7 @@
                                     <a href="#">
                                         <h2>Ophtalmologie</h2>
                                     </a>
-                                    <p>Notre mission est d'améliorer la qualité de vie grâce à l'amélioration de la vision...
+                                    <p >Notre mission est d'améliorer la qualité de vie grâce à l'amélioration de la vision...
                                     </p>
                                 </div>
                                 <div class="department_icon_content">
@@ -265,7 +262,7 @@
                                 <div class="heading clearfix">
                                     <h1>BIENVENUE À <span>KCLMED </span></h1>
                                 </div>
-                                <h6>Notre mission est de fournir un environnement de travail facile aux médecins pour gérer leur travail (rendez-vous, médicaments, patients, etc.)</h6>
+                                <h6 >Notre mission est de fournir un environnement de travail facile aux médecins pour gérer leur travail (rendez-vous, médicaments, patients, etc.)</h6>
 
                             </div>
                         </div>
@@ -330,88 +327,7 @@
                     </div>
                 </div>
             </section> --}}
-            <!--------best-doctors-------->
-            <section class="best-doctors  hme-one">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <div class="heading">
-                                <h1>BEST DOCTORS<span> FOR YOU</span></h1>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <div class="owl-carousel owl-theme three-item">
-                                <div class="best-doctor-outer">
-                                    <div class="image">
-                                        <img src="{{ asset('landing/assets/image/best-doctors/best-doctors1.jpg') }}"
-                                            class="img-fluid" alt="best-doctors" />
-                                        <a href="#" class="link"></a>
-                                    </div>
-                                    <div class="content-inner">
-                                        <h2> <a href="#">Dr. Genoveva Leannon </a> </h2>
-                                        <span>Internal Medicine</span>
-                                        <p>Dr. Will Marvin is an internist in Rochester, MN, and has been in practice
-                                            between 5-10 years.</p>
-                                        <ul>
-                                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                            <li><a href="#"><i class="fa fa-skype"></i></a></li>
-                                            <li><a href="#"><i class="fa fa fa-vimeo"></i></a></li>
-                                            <li><a href="#"><i class="fa fa-share-alt"></i></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="best-doctor-outer">
-                                    <div class="image">
-                                        <img src="{{ asset('landing/assets/image/best-doctors/best-doctors2.jpg') }}"
-                                            class="img-fluid" alt="best-doctors" />
-                                        <a href="#" class="link"></a>
-                                    </div>
-                                    <div class="content-inner">
-                                        <h2><a href="#"> Dr. Bethany Kertzmann</a></h2>
-                                        <span>Anesthesiology</span>
-                                        <p>Dr. Bethany Kertzmann is an anesthesiologist in Rochester, MN, and has been
-                                            in practice between 3-5 years.</p>
-                                        <ul>
-                                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                            <li><a href="#"><i class="fa fa-skype"></i></a></li>
-                                            <li><a href="#"><i class="fa fa fa-vimeo"></i></a></li>
-                                            <li><a href="#"><i class="fa fa-share-alt"></i></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="best-doctor-outer">
-                                    <div class="image">
-                                        <img src="{{ asset('landing/assets/image/best-doctors/best-doctors3.jpg') }}"
-                                            class="img-fluid" alt="best-doctors" />
-                                        <a href="#" class="link"></a>
-                                    </div>
-                                    <div class="content-inner">
-                                        <h2><a href="#"> Dr. Danielle Bechtelar</a></h2>
-                                        <span>Cardiology</span>
-                                        <p>Dr. Danielle Bechtelar is a cardiologist in Rochester, MN, and has been in
-                                            practice between 5-10 years</p>
-                                        <ul>
-                                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                            <li><a href="#"><i class="fa fa-skype"></i></a></li>
-                                            <li><a href="#"><i class="fa fa fa-vimeo"></i></a></li>
-                                            <li><a href="#"><i class="fa fa-share-alt"></i></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="view-more-doctors">
-                                <a href="#" class="view-doctors">SEE ALL DOCTORS</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!--------best-doctors-------->
+
             <!---Accordion--->
             <div class="recent-tags hme-one" id="faqs">
                 <div class="container">
@@ -703,14 +619,7 @@
                     <div class="row clearfix">
                         <div class="col-lg-12">
                             <div class="left">
-                                <p>© 2019 <span>Meditex.</span> All rights reserved.</p>
-                            </div>
-                            <div class="right">
-                                <ul>
-                                    <li><a href="#">Privacy Policy </a></li>
-                                    <li><a href="#"> Terms & Conditions </a></li>
-                                    <li><a href="#"> Help Center</a></li>
-                                </ul>
+                                <p>© 2023 <span>KCLMED.</span> All rights reserved.</p>
                             </div>
                         </div>
                     </div>
